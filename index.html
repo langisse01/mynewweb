@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Serviços de IT em Moçambique | Faztudo Langisse</title>
+
+<!-- SEO / FACEBOOK ADS -->
+<meta name="description" content="Serviços de IT em Moçambique. Criação de websites, Excel, design, sistemas de stock e suporte técnico. Contacte via WhatsApp.">
+<meta property="og:title" content="Serviços de IT em Moçambique">
+<meta property="og:description" content="Soluções digitais práticas e acessíveis para pessoas, lojas e pequenas empresas.">
+<meta property="og:type" content="website">
+
+<!-- Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0a58ca, #0dcaf0);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* SERVIÇOS */
+.services {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card i {
+    font-size: 30px;
+    color: #0a58ca;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+/* CTA */
+.cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn {
+    background: #25d366;
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #1ebe5b;
+}
+
+/* BOTÃO FLUTUANTE */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.whatsapp-float i {
+    font-size: 26px;
+}
+
+.whatsapp-float:hover {
+    background: #1ebe5b;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+</style>
+
+<script>
+/* CONTADOR DE CLIQUES (LOCAL) */
+function contarClique() {
+    let cliques = localStorage.getItem("cliques_whatsapp");
+    cliques = cliques ? parseInt(cliques) + 1 : 1;
+    localStorage.setItem("cliques_whatsapp", cliques);
+    console.log("Cliques no WhatsApp:", cliques);
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>Serviços de IT em Moçambique</h1>
+        <p>Soluções digitais práticas, rápidas e acessíveis para pessoas, lojas e pequenas empresas.</p>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <i class="fas fa-globe"></i>
+            <h3>Criação de Websites</h3>
+            <p>Páginas modernas para divulgar o seu negócio.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-file-excel"></i>
+            <h3>Excel & Automação</h3>
+            <p>Planilhas para controlo de vendas e stock.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Aplicações Informáticas</h3>
+            <p>Soluções feitas à medida.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-headset"></i>
+            <h3>Suporte Técnico</h3>
+            <p>Apoio técnico e consultoria.</p>
+        </div>
+    </div>
+
+    <div class="cta">
+        <a class="btn"
+           onclick="contarClique()"
+           href="https://wa.me/258825444550?text=Olá%20vi%20os%20seus%20serviços%20de%20IT%20e%20gostaria%20de%20mais%20informações"
+           target="_blank">
+            Falar no WhatsApp
+        </a>
+    </div>
+
+    <footer>
+        © 2026 • Faztudo Langisse • Serviços de IT em Moçambique
+    </footer>
+
+</div>
+
+<!-- BOTÃO FLUTUANTE -->
+<a class="whatsapp-float"
+   onclick="contarClique()"
+   href="https://wa.me/258825444550?text=Olá%20vi%20os%20seus%20serviços%20de%20IT%20e%20gostaria%20de%20mais%20informações"
+   target="_blank">
+   <i class="fab fa-whatsapp"></i>
+   Fale connosco
+</a>
+
+</body>
+</html>
